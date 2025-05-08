@@ -9,7 +9,7 @@
 </p>
 
 ## 平台简介
-* 本后台基于优秀的若依后台管理框架，前端完全使用若依代码，只做了适当的修改和优化，后端代码使用php的webman框架开发。。
+* 本后台基于优秀的若依后台管理框架，前端完全使用若依代码，只做了适当的修改和优化，后端代码使用php的webman框架开发。
 * 本仓库为前端仓库，技术栈为 [Vue3](https://v3.cn.vuejs.org) + [Element Plus](https://element-plus.org/zh-CN) + [Vite](https://cn.vitejs.dev) 。
 * 配套后端代码仓库地址:
 
@@ -57,10 +57,9 @@ yarn dev
 
 ## 在线体验
 
-- admin/admin123
-
-演示地址：http://jmsadmin.jmsite.cn  
-文档地址：http://doc.jmsadmin.jmsite.cn
+- 用户名/密码：admin/admin123
+- 演示地址：http://jmsadmin.jmsite.cn
+- 文档地址：http://doc.jmsadmin.jmsite.cn
 
 ## 演示图
 

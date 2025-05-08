@@ -206,7 +206,7 @@ const data = reactive({
     pageSize: 10,
     postCode: undefined,
     postName: undefined,
-    status: '1',
+    status: undefined,
     createTime: undefined
   },
   rules: {

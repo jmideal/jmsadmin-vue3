@@ -1,6 +1,6 @@
 import Cookies from 'js-cookie'
 
-const TokenKey = 'Webman-Jmsadmin-Token'
+const TokenKey = 'Jmsadmin-Token'
 
 export function getToken() {
   return Cookies.get(TokenKey)

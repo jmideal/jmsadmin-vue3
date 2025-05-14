@@ -198,7 +198,7 @@ const init = reactive({
       }
       const formData = new FormData();
       formData.append("file", file);
-      axios.post(import.meta.env.VITE_APP_BASE_API + "/app/jmsadmin/system/common/upload", formData, {
+      axios.post(import.meta.env.VITE_APP_BASE_API + import.meta.env.VITE_APP_BASE_PREFIX + "/system/common/upload", formData, {
         headers: headers.value,
         onUploadProgress: (progressEvent) => {
           progress(

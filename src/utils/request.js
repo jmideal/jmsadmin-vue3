@@ -23,7 +23,7 @@ const service = axios.create({
 // request拦截器
 service.interceptors.request.use(config => {
   if (config.url) {
-    config.url = '/app/jmsadmin' + config.url;
+    config.url = import.meta.env.VITE_APP_BASE_PREFIX + config.url;
   }
   // 是否需要设置 token
   const isToken = (config.headers || {}).isToken === false

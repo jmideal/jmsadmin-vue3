@@ -196,7 +196,7 @@ const upload = reactive({
   // 设置上传的请求头部
   headers: { Authorization: "Bearer " + getToken() },
   // 上传的地址
-  url: import.meta.env.VITE_APP_BASE_API + "/app/jmsadmin/system/post/importData"
+  url: import.meta.env.VITE_APP_BASE_API + import.meta.env.VITE_APP_BASE_PREFIX + "/system/post/importData"
 });
 
 const data = reactive({

@@ -34,7 +34,7 @@ import { getToken } from "@/utils/auth";
 const { proxy } = getCurrentInstance();
 
 const quillEditorRef = ref();
-const uploadUrl = ref(import.meta.env.VITE_APP_BASE_API + "/app/jmsadmin/system/common/upload"); // 上传的图片服务器地址
+const uploadUrl = ref(import.meta.env.VITE_APP_BASE_API + import.meta.env.VITE_APP_BASE_PREFIX + "/system/common/upload"); // 上传的图片服务器地址
 const headers = ref({
   Authorization: "Bearer " + getToken()
 });

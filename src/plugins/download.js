@@ -6,6 +6,7 @@ import errorCode from '@/utils/errorCode'
 import { blobValidate } from '@/utils/ruoyi'
 
 const baseURL = import.meta.env.VITE_APP_BASE_API
+const basePREFIX = import.meta.env.VITE_APP_BASE_PREFIX
 let downloadLoadingInstance;
 
 export default {
@@ -67,7 +68,7 @@ export default {
     })
   },
   zipPost(url, data, name) {
-    var url = baseURL + '/app/jmsadmin' + url
+    var url = baseURL + basePREFIX + url
     data.__timestamp = Date.now();
     downloadLoadingInstance = ElLoading.service({ text: "正在下载数据，请稍候", background: "rgba(0, 0, 0, 0.7)", })
     axios({
